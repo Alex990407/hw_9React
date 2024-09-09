@@ -1,13 +1,23 @@
-.form {
+/* .form {
   display: flex;
   flex-direction: column;
   max-width: 300px;
   margin: 0 auto;
+} */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  margin: 0 auto;
+  align-items: center;
+  height: 100vh; /* Полная высота экрана */
 }
 
-label {
+/* label {
   margin-top: 10px;
-}
+} */
 
 input {
   padding: 8px;
@@ -16,7 +26,37 @@ input {
   border-radius: 4px;
 }
 
+input {
+  margin-bottom: 10px; /* Отступ между инпутами */
+  padding: 8px;
+  font-size: 16px;
+  width: 200px; /* Ширина инпутов */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 .error {
   color: red;
   font-size: 12px;
+  margin-top: -5px;
+  margin-bottom: 10px;
 }

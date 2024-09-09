@@ -1,5 +1,5 @@
 import React from "react";
-import { useForm, watch } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import styles from "./DynamicForm.module.css";
 
 function DynamicForm() {
@@ -10,7 +10,7 @@ function DynamicForm() {
     formState: { errors },
   } = useForm();
 
-  const firstName = watch("firstName"); // Отслеживаем значение первого поля
+  const firstName = watch("firstName");
 
   const onSubmit = (data) => {
     console.log(data);
